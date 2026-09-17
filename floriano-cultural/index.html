@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Turístico de Floriano - PI</title>
+</head>
+
+<body>
+
+    <!-- =========================================
+         PARTE 1 - CABEÇALHO E IMAGENS SEMÂNTICAS
+    ========================================== -->
+
+    <header>
+
+        <!-- Logotipo do IFPI -->
+        <img
+            src="img/logo-ifpi.png"
+
+            alt="Logotipo do Instituto Federal do Piauí Campus Floriano"
+            width="200"
+        >
+
+        <h1>Portal Turístico de Floriano - PI</h1>
+
+        <p>
+            Conheça alguns dos principais pontos turísticos, culturais
+            e históricos da cidade de Floriano.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             GALERIA DE ATRAÇÕES
+        ========================================== -->
+
+        <section>
+
+            <h2>Pontos Turísticos</h2>
+
+
+            <!-- Ponto turístico 1 -->
+            <figure>
+
+                <img
+                    src="img/rio-parnaiba.jfif"
+                    alt="Vista do Rio Parnaíba com suas águas e vegetação às margens"
+                    width="300"
+                >
+
+                <figcaption>
+                    Rio Parnaíba, um dos principais símbolos naturais da região de Floriano.
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Ponto turístico 2 -->
+            <figure>
+
+                <img
+                    src="img/capela-padre-lira.jfif"
+                    alt="Fachada da Capela do Padre Lira com arquitetura religiosa tradicional"
+                    width="300"
+                >
+
+                <figcaption>
+                    Capela do Padre Lira, importante patrimônio religioso e cultural de Floriano.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- =========================================
+             PARTE 2 - ÁUDIO-GUIA TURÍSTICO
+        ========================================== -->
+
+        <section>
+
+            <h2>Áudio-Guia de Floriano</h2>
+
+            <p>
+                Ouça um breve guia sobre a história e os principais
+                pontos turísticos de Floriano.
+            </p>
+
+            <audio controls>
+
+                <!-- Formato MP3 -->
+                <source
+                    src="audio/guia-floriano.mp3"
+                    type="audio/mpeg"
+                >
+
+                <!-- Formato OGG -->
+                <source
+                    src="audio/guia-floriano.ogg"
+                    type="audio/ogg"
+                >
+
+                <!-- Fallback -->
+                Seu navegador não suporta o elemento de áudio.
+
+                <a href="audio/guia-floriano.mp3" download>
+                    Baixe o áudio-guia de Floriano
+                </a>.
+
+            </audio>
+
+        </section>
+
+
+        <!-- =========================================
+             PARTE 3 - DOCUMENTÁRIO LOCAL
+        ========================================== -->
+
+        <section>
+
+            <h2>Documentário sobre a Cultura de Floriano</h2>
+
+            <p>
+                Assista a um breve documentário apresentando aspectos
+                históricos e culturais da cidade.
+            </p>
+
+
+            <video
+                width="100%"
+                controls
+                poster="imagens/poster-video.jpg"
+            >
+
+                <!-- Formato MP4 -->
+                <source
+                    src="video/documentario-floriano.mp4"
+                    type="video/mp4"
+                >
+
+                <!-- Formato WebM -->
+                <source
+                    src="video/documentario-floriano.webm"
+                    type="video/webm"
+                >
+
+
+                <!-- Legenda em português -->
+                <track
+                    src="legendas/legenda-floriano.vtt"
+                    kind="subtitles"
+                    srclang="pt"
+                    label="Português"
+                    default
+                >
+
+
+                <!-- Fallback -->
+                Seu navegador não suporta a reprodução de vídeos.
+
+                <a href="video/documentario-floriano.mp4">
+                    Baixe o documentário
+                </a>.
+
+            </video>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         PARTE 4 - INTEGRAÇÃO COM GOOGLE MAPS
+    ========================================== -->
+
+    <footer>
+
+        <section>
+
+            <h2>Como chegar ao IFPI Campus Floriano</h2>
+
+            <p>
+                Consulte no mapa a localização do Instituto Federal do Piauí
+                - Campus Floriano.
+            </p>
+
+
+            <iframe
+                src="https://www.google.com/maps?q=IFPI+Campus+Floriano+PI&output=embed"
+                width="100%"
+                height="450"
+                style="border: 0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa mostrando a localização do IFPI Campus Floriano">
+            </iframe>
+
+        </section>
+
+
+        <p>
+            &copy; 2026 - Portal Turístico de Floriano - PI
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
